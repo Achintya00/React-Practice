@@ -1,0 +1,55 @@
+#for single line
+message: >
+  this will 
+  all be in one
+  single line
+---
+hello: |
+  dude 
+  how to wrie in
+---
+#type specific
+zero: !!int 0
+commavalue: !!int +540_000
+---
+#null to use null u need to specify ~
+
+infinite: .inf
+name: [Achintya, Dhingra, Sam]
+not a number: .nan
+
+---
+#nested sequences 
+-
+ - mango
+ - apple
+ - sol
+-
+ - ad
+ -
+ -
+---
+# nested maps
+name: Achntya
+role: {age: 21, job: trainee}
+# pairs are used to contain duplicate keys
+# u can use it !!pairs 
+#set
+names:
+ ? ad: ad
+ ? hello: hello
+ ? dude: sol
+#using dictionary 
+person: !!omaps
+ - Achi:
+    name: null
+    age: 21
+    height: 180 
+#using anchors
+likings: &likes
+  fav: apple
+  rate: 5 stars
+
+person1: 
+  name: Achi
+  <<: *likes 

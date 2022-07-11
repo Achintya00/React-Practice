@@ -1,0 +1,17 @@
+#key-value pair
+"apple": "Fruit"
+1: "my roll number"
+
+---
+#list
+- apple
+- mango
+- banana
+- see
+
+---
+#blocks
+cities:
+  - hisar
+  - Delhi
+  - bangalore
